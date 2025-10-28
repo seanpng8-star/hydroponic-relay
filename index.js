@@ -5,7 +5,7 @@ import bodyParser from "body-parser";
 const app = express();
 app.use(bodyParser.json());
 
-const OPENAI_API_KEY = const OPENAI_KEY = process.env.OPENAI_KEY;
+const OPENAI_KEY = process.env.OPENAI_KEY;
 
 // simple health check
 app.get("/", (req, res) => {
